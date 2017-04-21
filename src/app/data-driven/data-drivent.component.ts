@@ -13,7 +13,7 @@ export class DataDrivenComponent {
   public submitted = false;
   constructor(private formBuilder: FormBuilder){
     this.myForm = formBuilder.group({
-      'name' : ['', [Validators.required]],
+      'name' : ['', [Validators.required, Validators.minLength(1)]],
       'email' : ['', [Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]],
       'post' : ['', [Validators.required, Validators.minLength(10)]]
     });
