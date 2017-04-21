@@ -11,7 +11,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class PostService {
-  private postUrl = 'http://jsonplaceholder.typicode.com/users?email=';
+  private postUrl = 'https://jsonplaceholder.typicode.com/users?email=';
   constructor(private http: Http){}
 
   getPost(email): Observable<Object>{
