@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {DataDrivenComponent} from './data-driven/data-drivent.component';
+import {PostService} from './service/post.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {DataDrivenComponent} from './data-driven/data-drivent.component';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
