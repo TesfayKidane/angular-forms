@@ -1,6 +1,7 @@
 # Angular Forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project was created to practice angular data driven forms, observables,
+and services. Demo can be found [here](https://tesfaykidane.github.io/angular-forms/)
 
 ## Development server
 
